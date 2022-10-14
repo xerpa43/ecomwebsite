@@ -1,0 +1,569 @@
+
+
+
+body{
+   overflow-x: hidden;
+}
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    font-size: 100%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 199, 64);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+#nav li {
+    list-style: none;
+    padding: 0 18px;
+
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 650;
+    color: rgb(33, 27, 27);
+    transition: 0.3s ease;
+
+}
+
+#nav li a:hover,
+#nav li a.active {
+    color: rgb(0, 255, 149);
+}
+
+#nav li a.active::after {
+    content: '';
+    max-width: 30px;
+    max-height: 3px;
+    position: absolute;
+    background: rgb(48, 222, 9);
+   
+}
+
+
+#model{
+    background-image: url("background/woman-holding-various-shopping-bags-copy-space.jpg");
+    height: 50vh;
+    display: flex;
+    background-size: cover;
+    padding: 5rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#model h2{
+    font-size: 7em;
+    color: rgb(10, 13, 56);
+
+}
+#model h1{
+    color: cadetblue;
+   font-weight: 800;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+#model button {
+
+    border-radius: 4px;
+    background-color: rgb(12, 231, 12);
+    padding: .9rem 3.4rem .8rem 3.4rem;
+    font-size: 1rem;
+    margin-top: 3.4rem;
+
+    align-self: center;
+    font-weight: 800;
+    color: rgba(9, 7, 4, 0.55);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+
+
+    transition: .4s ease;
+}
+
+#model button:hover {
+    box-shadow: 2px 4px 12px rgba(128, 128, 128, 0.282);
+    color: rgba(255, 251, 0, 0.982);
+}
+
+
+
+.fe1 {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+
+
+}
+
+
+
+#feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tf {
+    text-align: center;
+    background-image: linear-gradient(to left, green, blue, purple, orange, cyan, brown);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+    width: 100%;
+    font-size: 4em;
+    padding-bottom: 3.75rem;
+    cursor: default;
+    padding-left: 2.8125rem;
+}
+
+#feature .femage{
+    max-width: 100%;
+}
+#feature .fea {
+    font-weight: 500;
+    font-size: 1.4375rem;
+    text-align: center;
+    max-width: 11.25rem;
+    border: 3px solid rgba(0, 0, 0, 0.044);
+    padding: 1.25rem 0.3125rem;
+    box-shadow: 1.25rem 1.25rem 1.125rem rgba(226, 188, 188, 0.149);
+    border-radius: 0.625rem;
+}
+
+#feature .fea:hover {
+    cursor: pointer;
+    text-shadow: 0 0 5px rgba(5, 68, 16, 0.123);
+    box-shadow: 1.25rem 1.25rem  2.8125rem rgba(226, 188, 188, 0.527);
+
+}
+
+#feature .fea h5 {
+    padding: 3px;
+    border: 2px solid rgba(156, 98, 177, 0);
+    border-radius: 4px;
+    background-color: rgba(137, 43, 226, 0.227);
+    color: rgba(17, 191, 213, 0.829);
+}
+
+#feature .fea:nth-child(2) h5 {
+    background-color: rgba(255, 0, 183, 0.326);
+}
+
+#feature .fea:nth-child(3) h5 {
+    background-color: rgba(84, 232, 84, 0.507);
+}
+
+#feature .fea:nth-child(4) h5 {
+    background-color: rgba(0, 132, 255, 0.327);
+}
+
+#feature .fea:nth-child(5) h5 {
+    background-color: rgba(72, 10, 134, 0.327);
+}
+
+#feature .fea:nth-child(6) h5 {
+    background-color: rgba(255, 130, 34, 0.327);
+}
+
+#laptops {
+    margin-top: 2.5rem;
+
+    display: flex;
+    padding: 2.5rem 2.5rem;
+    flex-wrap: wrap;
+    
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+#laptops .lap1 {
+    position: relative;
+    width: 12.5rem;
+    padding: 1rem 1rem;
+    height: 18.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2rem rgba(78, 72, 72, 0.053);
+    transition: 0.3s ease;
+    margin: 1.5rem 1.3rem 1.875rem 2rem;
+}
+
+#laptops .first {
+    width: 11.25rem;
+    max-width:11.25rem ;
+
+    height: 8.125rem;
+    max-height: 8.125rem;
+    padding-bottom: 0.625rem;;
+    text-align: center;
+}
+
+#laptops .heading {
+    text-align: center;
+    background-image: linear-gradient(to left, green, blue, purple, orange, cyan, brown);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+    width: 100%;
+    font-size: 2rem;
+    padding-bottom: 3.75rem;
+    cursor: default;
+    padding-left: 2.8125rem;
+}
+
+#laptops .lap1:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2.8125rem rgba(75, 64, 64, 0.173);
+
+}
+
+#laptops .lap1:hover p {
+    text-decoration: underline;
+
+}
+
+#laptops .ico {
+
+    color: transparent;
+    background-color: rgb(250, 245, 141);
+    padding: 0.5rem 0.5rem;
+    max-width: 25px;
+    margin-top: -1.8125rem;
+    border-radius: 50%;
+    margin-left: 9.3175rem;
+    border-color: rgb(31, 31, 77);
+    border-style: double;
+}
+
+#laptops .price {
+    text-align: right;
+    background-color: red;
+    width: fit-content;
+}
+
+#laptops span {
+    justify-content: center;
+    padding-top: 0.625rem;
+    display: block;
+    text-align: center;
+    color: black;
+    font-weight: 800;
+
+
+}
+
+#laptops .lap1 p {
+    min-width: 11.875rem;
+    max-width: 12.5rem;
+    max-height: 25%;
+    min-height: 25%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+
+
+
+
+
+#off{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-image: url("banner/gaming2.jpg");
+    background-size: cover;
+    color: rgba(244, 245, 255, 0.589);
+    background-repeat:no-repeat;
+    height: 50vh;
+    background-position: center;
+}
+
+
+#off h3{
+    font-size: 2rem;
+}
+#off h1{
+    font-size: 2rem;
+    color: rgb(69, 7, 255);
+}
+
+
+
+#off button {
+    font-size: .875rem;
+    font-weight: 800;
+    padding: 1.2rem;
+    color: rgba(9, 7, 4, 0.55);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    transition: .4s ease;
+
+}
+
+#off button:hover {
+    box-shadow: 2px 2px 13px rgba(255, 41, 205, 0.894);
+}
+
+#posters{
+     padding:1.3rem 1.3rem;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-size: 3rem;
+}
+
+#posters .pos{
+    height: 40vh;
+    
+    background-image: url("banner/im.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: .25rem;
+    margin-bottom: 3rem;
+  color: rgb(255, 216, 23);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 3px 12px 43px rgb(2, 2, 13);
+  
+}   
+
+#posters .pos1 {
+    height: 40vh;
+    background-position-y: -34%;
+    background-image: url("banner/rtx.png");
+    background-size: cover;
+    border-radius: 5px;
+   color: rgb(131, 196, 2);
+   font-size: 100%;
+  text-shadow: 3px 3px 23px black;
+   
+}
+#posters .pos p,
+    #posters .pos1 p{
+    margin: 3px ;
+    padding: 2rem 2.3rem 3px 2.4rem;
+    caret-color: aqua;
+
+}
+
+#newsletter h3 {
+    font-size: 1.24rem;
+    color: azure;
+    padding: 2.3rem 2.3rem 0.25rem 1.3rem;
+}
+
+#newsletter p {
+    font-size: 1.3rem;
+    color: aliceblue;
+    min-width: 1rem;
+    padding: 0.625rem 2rem 2rem 1.3rem;
+    outline: 0;
+    
+}
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 30% 20%;
+    background-color: rgb(53, 14, 53);
+    padding: 1.2rem 2.4rem 3rem .625rem;
+}
+
+#newsletter p span {
+    color: brown;
+}
+
+.form {
+    margin-right: 11rem;
+    display: flex;
+}
+
+#newsletter input {
+    padding: 1.3rem .8rem 1.3rem 2.2rem;
+    
+    font-size: 1rem;
+    max-width: 22rem;
+    border-color: rgba(137, 43, 226, 0.221);
+    border-radius: 5px;
+    border-width: 0px;
+    
+    outline: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+}
+
+#newsletter button {
+    background-color: rgb(59, 177, 138);
+    font-size: 1rem;
+    margin: 0;
+
+    font-weight: 600;
+    padding: 1.2rem 2.4rem 1.2rem 2.45rem;
+    color: rgba(9, 7, 4, 0.55);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    display: block;
+    outline: 0;
+    white-space: nowrap;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    transition: .3s ease;
+}
+
+footer {
+
+    padding:2.6rem 8rem 2rem 4rem ;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+
+
+}
+
+
+
+
+
+.install {
+    padding-top: .8rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.second a,
+.third a {
+    text-decoration: none;
+    color: gray;
+}
+
+.thelogo img{
+    width: 7rem;
+    background-size: cover;
+    
+}
+
+
+
+
+.footlogo,
+.second,
+.third {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: gray;
+    width: 6rem;
+
+}
+
+.footlogo p {
+    font-size: 1.3rem;
+}
+
+.row img {
+    width: 8rem;
+}
+
+footer a:hover,
+footer .icon i:hover {
+    color: rgba(6, 83, 83, 0.604);
+    cursor: pointer;
+}
+
+footer .install .row img:hover {
+    cursor: pointer;
+    box-shadow: 2px 3px 22px rgba(128, 128, 128, 0.264);
+}
+
+
+footer .payment {
+    padding-top: 3rem;
+}
+
+@media screen and (max-width:500px) {
+    html{
+        font-size:60%;
+        
+    }
+html{
+overflow: visible;
+}
+
+        #header .logo{
+            width: 5rem;
+         }
+        #nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            height: 100vh;
+            width: 300px;background-color: azure;
+            box-shadow: 0px 30px 50px rgba(177, 22, 22, 0.044) ;
+            padding: 80px 0 0 10px;
+        }
+       
+    
+    
+    
+    
+    
+}

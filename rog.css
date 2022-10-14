@@ -1,0 +1,500 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+html{
+    font-size:100%;
+    
+    
+}
+
+
+
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 199, 64);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.09);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+#nav li {
+    list-style: none;
+    padding: 0 .8rem;
+
+}
+
+@media (max-width:500px) {
+
+     #header .logo{
+        width: 6rem;
+     }
+    #nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -14rem;
+        height: 100vh;
+        width: 9rem;background-color: azure;
+        box-shadow: 0px 30px 50px rgba(177, 22, 22, 0.044) ;
+        padding: 5rem 0 0 .8rem;
+    }
+   
+
+
+
+
+}
+
+#nav li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 650;
+    color: rgb(33, 27, 27);
+    transition: 0.3s ease;
+
+}
+
+#nav li a:hover,
+#nav li a.active {
+    color: rgb(0, 255, 149);
+}
+
+#nav li a.active::after {
+    content: '';
+    max-width: 3rem;
+    max-height: .3rem;
+    position: absolute;
+    background: rgb(48, 222, 9);
+    bottom: -.4rem;
+    left: 2rem;
+}
+
+#asus{
+    display: flex;
+    
+}
+#asus .bottom{
+    
+    width: 2.14rem;
+    
+   padding: .1rem;
+   
+  
+}
+#asus .img{
+    width: 18rem;
+    height: 15rem;
+    
+}
+.small_groups{
+    display: flex;  
+    justify-content: center;
+     margin-top: 1rem;
+}
+.whole
+{
+width: 18rem;
+padding:.8rem 3rem 2rem 3rem;
+position: sticky;
+top: 6rem;
+
+
+
+}
+
+.total_info{
+    overflow: hidden;
+    margin-left: -2rem;
+    text-align:start;
+    padding-top: 4rem;
+    padding-right: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.small{
+    
+     
+     border: 2px solid rgba(38, 33, 33, 0.247);
+     margin-left: 1rem;
+     width: max-content;
+     align-items: center;
+     display: flex;
+     
+}
+
+.small img{
+justify-content: center;
+    align-items: center;
+    
+
+}
+.small:hover{
+    border: 3px solid black;
+}
+
+
+
+.Button button{
+
+    border-radius: 4px;
+    background-color: rgb(239, 203, 40);
+    padding: .9rem 2rem .8rem 2rem;
+    font-size: .8rem;
+    margin-top: 2rem;
+
+    align-self: center;
+    font-weight: 800;
+    color: rgba(9, 5, 4, 0.55);
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+
+
+}
+.Button button:hover {
+    box-shadow: 2px 4px .7rem rgba(128, 128, 128, 0.282);
+    color: rgba(255, 249, 249, 0.982);
+}
+
+
+
+
+.details{
+    margin: auto;
+flex-direction: column;
+width: 100%;
+font-weight: bolder;
+margin-bottom: 1rem;
+}
+
+#par{
+    color: gray;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.price{
+    text-decoration: line-through;
+}
+
+
+ .heading {
+    text-align: center;
+    background-image: linear-gradient(to left, green, blue, purple, orange, cyan, brown);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+    font-size: 2rem;
+    padding-bottom: 3.75rem;
+    cursor: default;
+    padding-left: 2.8125rem;
+}
+
+#otherlaptops {
+
+    display: flex;
+    
+    justify-content: space-between;
+    overflow-x: auto;}
+
+
+
+#otherlaptops .lap1 {
+    position: relative;
+    border-radius: .5rem;
+    border: 3px solid rgba(180, 180, 255, 0.126);
+    box-shadow: 0 0 4rem rgba(78, 72, 72, 0.053);
+    transition: 0.3s ease;
+    margin: 2rem 2rem 2rem 2rem;
+   padding:1rem ;
+   
+
+}
+
+#otherlaptops .first {
+
+    width: 15rem;
+    max-width: 15rem;
+
+    height:11rem;
+    min-height: 7rem;
+    padding-bottom: .6rem;
+    text-align: center;
+}
+
+#otherlaptops .lap1:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2.8125rem rgba(75, 64, 64, 0.173);
+
+}
+
+
+#newsletter h3 {
+    font-size: 2rem;
+    color: azure;
+    padding: 3rem 3rem .3rem 1.2rem;
+}
+
+#newsletter p {
+    font-size: 1.3rem;
+    color: aliceblue;
+    padding: .6rem 3rem 2rem 1.4rem;
+    outline: 0;
+}
+
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(img/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 30% 20%;
+    background-color: rgb(53, 14, 53);
+    padding: 1.3rem 2.4rem 3rem .6rem;
+}
+
+#newsletter p span {
+    color: brown;
+}
+
+.form {
+    margin-right: 12rem;
+    display: flex;
+
+}
+
+#newsletter input {
+    padding: 1.2rem 2.7rem 1.4rem 2.2rem;
+    
+
+    font-size: medium;
+    max-width: 21rem;
+    border-color: rgba(137, 43, 226, 0.221);
+    border-radius: 5px;
+    border-width: 0px;
+    width: 100%;
+    outline: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+
+}
+
+#newsletter button {
+    background-color: rgb(59, 177, 138);
+    font-size: medium;
+    margin: 0;
+
+    font-size: .8rem;
+    font-weight: 800;
+    padding: 1.2rem 2.7rem 1.4rem 2.2rem;
+    color: rgba(9, 7, 4, 0.55);
+    cursor: pointer;
+    border-radius: .4rem;
+    border: 0;
+    outline: 0;
+    white-space: nowrap;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    transition: .3s ease;
+}
+
+footer {
+
+    padding:2.6rem 8rem 7rem 4rem ;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+
+
+}
+
+
+
+
+.install {
+    padding-top: .8rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.second a,
+.third a {
+    text-decoration: none;
+    color: gray;
+}
+
+.thelogo img{
+    width: 7rem;
+    background-size: cover;
+    
+}
+
+
+
+
+
+.footlogo p {
+    font-size: 1.3rem;
+}
+
+.row img {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+footer a:hover,
+footer .icon i:hover {
+    color: rgba(6, 83, 83, 0.604);
+    cursor: pointer;
+}
+
+footer .install .row img:hover {
+    cursor: pointer;
+    box-shadow: 2px 3px 22px rgba(128, 128, 128, 0.264);
+}
+
+
+footer .payment {
+    padding-top: 2rem;
+}
+
+
+@media screen and (max-width:500px)
+{
+    
+
+
+#nav li{
+    margin-bottom: 2rem;
+}
+
+#newsletter input {
+    padding: 1.2rem 3.6rem 2rem 3rem;
+
+    font-size: medium;
+    max-width: 11rem;
+    border-color: rgba(137, 43, 226, 0.221);
+    border-radius: .3rem;
+    border-width: 0px;
+    width: 100%;
+    outline: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+
+}
+
+#newsletter button {
+    background-color: rgb(59, 177, 138);
+
+    margin: 0;
+
+    font-size: .4rem;
+    font-weight: 400;
+    padding: 2rem 3.4rem 1.7rem 3rem;
+    color: rgba(9, 7, 4, 0.55);
+    cursor: pointer;
+    border-radius: .4rem;
+    border: 0;
+    outline: 0;
+    white-space: nowrap;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+}
+
+@media (max-width:500px){
+    html{
+        font-size:30%;
+    }
+    *{padding: 0%;
+    margin: 0%;}
+    
+    #model{
+       
+    }
+    
+#laptops .lap1 {
+    position: relative;
+    width: 17rem;
+    height: 29rem;
+    border-radius: .5rem;
+    border: 3px solid rgba(180, 180, 255, 0.126);
+    box-shadow: 0 0 4rem rgba(78, 72, 72, 0.053);
+    transition: 0.3s ease;
+    margin: .4rem 1rem 1rem 0rem;
+    padding: 1rem;
+   
+
+}
+}
+
+
+
+.footlogo,
+.second,
+.third {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: gray;
+    width: 6rem;
+
+}
+
+.footlogo p {
+    font-size: 1.3rem;
+}
+
+.row img {
+    width: 8rem;
+    border:1px solid rgba(0, 0, 0, 0.16);
+}
+
+footer a:hover,
+footer .icon i:hover {
+    color: rgba(6, 83, 83, 0.604);
+    cursor: pointer;
+}
+
+footer .install .row img:hover {
+    cursor: pointer;
+    box-shadow: 2px 3px 22px rgba(128, 128, 128, 0.264);
+}
+
+
+footer .payment {
+    padding-top: 3rem;
+}
