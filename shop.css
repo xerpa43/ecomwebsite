@@ -127,7 +127,7 @@ html{
     margin: 1rem 1rem 1rem 1rem;
    padding:1rem ;
    
-
+  
 }
 
 #laptops .first {
@@ -139,6 +139,7 @@ html{
     min-height: 7rem;
     padding-bottom: .6rem;
     text-align: center;
+    
 }
 
 #laptops .heading {
@@ -166,10 +167,23 @@ html{
 
 }
 
-#laptops .ico {
+#laptops .ico{
 
     color: transparent;
     background-color: rgb(250, 245, 141);
+    padding: .8rem .8rem;
+    margin-top: -4.4rem;
+    max-width: 25px;
+    border-radius: 50%;
+    margin-left: 13rem;
+    border-color: rgb(31, 31, 77);
+    border-style: double;
+    display: block;
+}
+#laptops .ico:hover{
+
+    color: transparent;
+    background-color: rgb(5, 255, 138);
     padding: .8rem .8rem;
     margin-top: -4.4rem;
     max-width: 25px;
