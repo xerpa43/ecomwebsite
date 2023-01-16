@@ -1,4 +1,6 @@
 # ecomwebsite
-Hello,
-The project isn't complete, i have to add blogs, script for cart. ALl the device info is kind of complete but have to make it better
-I want to create a fully functional front end web page 
+
+ Website:  https://nimashoptemp.000webhostapp.com/
+ This is an ecommerce template website. It is static and it the data are stored in your browsers storage. It doesn't utilize any backend.
+
+
